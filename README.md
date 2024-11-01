@@ -1,7 +1,7 @@
 # Programming-Assignment-1: Producer-Consumer
 
-#Overview
-My name is Alicia Brown and for assignment 1 for Operating Systems, we had to make a producer that produces a maximum of 2 items and a consumer that consumes those 2 items.
+# Overview
+My name is Alicia Brown. For assignment 1 for Operating Systems, we had to create a producer that produces a maximum of 2 items and a consumer that consumes those 2 items.
 This program utilizes shared memory between the 2 programs and uses a critical section to ensure data consistency as well as prevent race conditions.
 
 # How it Works
@@ -29,5 +29,7 @@ consumed: 1
 
 # Compliation Commands
 g++ producer.cpp -o producer
+
 g++ consumer.cpp -o consumer
+
 ./producer & ./consumer &
