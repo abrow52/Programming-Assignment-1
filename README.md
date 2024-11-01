@@ -23,8 +23,11 @@ Consumer
 
 # Example Output
 produced: 0
+
 produced: 1
+
 consumed: 0
+
 consumed: 1
 
 # Compliation Commands
