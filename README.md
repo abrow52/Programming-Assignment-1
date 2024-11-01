@@ -26,16 +26,16 @@ Consumer
 # Example Output
 produced: 0
 
-produced: 1
-
 consumed: 0
+
+produced: 1
 
 consumed: 1
 
 # Compliation Commands
-g++ producer.cpp -o producer
+g++ producer.cpp -o producer -lpthread
 
-g++ consumer.cpp -o consumer
+g++ consumer.cpp -o consumer -lpthread
 
 ./producer & ./consumer &
 
