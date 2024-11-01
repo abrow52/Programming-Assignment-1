@@ -4,6 +4,8 @@
 My name is Alicia Brown. For assignment 1 for Operating Systems, we had to create a producer that produces a maximum of 2 items and a consumer that consumes those 2 items.
 This program utilizes shared memory between the 2 programs and uses a critical section to ensure data consistency as well as prevent race conditions.
 
+contents: shared.hpp, producer.cpp, & consumer.cpp
+
 # How it Works
 In the header file we have 3 semaphore: empty, full, and a mutex. Empty and full are used for buffer access to the producer and consumer, while the mutex semaphore protects the critical section, thus ensuring that one program is acessing the buffer. Each program iterates the producer-consumer interaction twice.
 
@@ -36,3 +38,6 @@ g++ producer.cpp -o producer
 g++ consumer.cpp -o consumer
 
 ./producer & ./consumer &
+
+# Problems Faced
+Some of the problems I faced were getting the programs to be synchronized, learning how to use semaphore functions, and learning how to shared memory.
